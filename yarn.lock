@@ -5886,6 +5886,11 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
+material-icons@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/material-icons/-/material-icons-1.11.1.tgz#9dc4ad990df59c551a32767ecbb174f41c06ecd6"
+  integrity sha512-FCZ3mSoXzQ0UetDfhWpLOPG+duErvt1ALhnNt1TMB7GYHq5hvOqB0HE292qWcuVkCGxej2aARz//dz47zM3Cdg==
+
 mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
