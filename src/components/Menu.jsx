@@ -3,13 +3,23 @@ import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
 import ComputerIcon from '@mui/icons-material/Computer';
+
 function Menu() {
   return (
-    <div style={{ position: 'absolute', bottom: '5%', left: '3%' }}>
+    <div
+      style={{
+        position: 'fixed',
+        bottom: '5%',
+        left: '3%',
+        color: 'black',
+      }}
+    >
       <div
         style={{
           display: 'flex',
           width: '150px',
+          cursor: 'pointer',
+          marginTop: '20px',
         }}
       >
         <div style={{ marginRight: '15px' }}>
@@ -21,6 +31,8 @@ function Menu() {
         style={{
           display: 'flex',
           width: '150px',
+          cursor: 'pointer',
+          marginTop: '20px',
         }}
       >
         <div style={{ marginRight: '15px' }}>
@@ -32,6 +44,8 @@ function Menu() {
         style={{
           display: 'flex',
           width: '150px',
+          cursor: 'pointer',
+          marginTop: '20px',
         }}
       >
         <div style={{ marginRight: '15px' }}>
@@ -43,6 +57,8 @@ function Menu() {
         style={{
           display: 'flex',
           width: '150px',
+          cursor: 'pointer',
+          marginTop: '20px',
         }}
       >
         <div style={{ marginRight: '15px' }}>

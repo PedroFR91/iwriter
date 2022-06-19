@@ -4,10 +4,12 @@ function Export() {
   return (
     <div
       style={{
-        position: 'absolute',
+        position: 'fixed',
         bottom: '5%',
         right: '3%',
         display: 'flex',
+        cursor: 'pointer',
+        color: 'black',
       }}
     >
       <div style={{ marginRight: '15px' }}>Export</div>
