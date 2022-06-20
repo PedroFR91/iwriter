@@ -158,3 +158,9 @@ h6 {
 .red {
   color: #eb5759;
 }
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

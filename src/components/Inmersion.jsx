@@ -12,7 +12,6 @@ function Inmersion() {
         bottom: '70px',
         left: '70px',
         backgroundColor: '#ffffff',
-        display: 'none',
       }}
     >
       <div

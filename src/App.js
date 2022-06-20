@@ -1,7 +1,7 @@
 import Export from './components/Export';
 import Login from './components/Login';
 import Text from './components/Text';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
@@ -14,7 +14,19 @@ function App() {
   const [color, setColor] = useState('black');
   const [backcolor, setBackcolor] = useState('white');
 
+  const [isOpen, setIsOpen] = useState(false);
+  function toggleView() {
+    setIsOpen(!isOpen);
+  }
+
+  const [isActive, setIsActive] = useState(false);
+
+  function toggleAtive() {
+    setIsActive(!isActive);
+  }
+
   const handle = useFullScreenHandle();
+
   return (
     <FullScreen handle={handle}>
       <div className='App' style={{ color: color, backgroundColor: backcolor }}>
@@ -78,6 +90,7 @@ function App() {
               cursor: 'pointer',
               marginTop: '20px',
             }}
+            onClick={toggleView}
           >
             <div style={{ marginRight: '15px' }}>
               <ComputerIcon />
@@ -88,7 +101,7 @@ function App() {
         <Export />
         <Login />
         <Text />
-        <Inmersion />
+        {isOpen && <Inmersion />}
       </div>
     </FullScreen>
   );
