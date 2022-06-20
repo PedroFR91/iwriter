@@ -1,7 +1,7 @@
 import Export from './components/Export';
 import Login from './components/Login';
 import Text from './components/Text';
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import OpenInFullIcon from '@mui/icons-material/OpenInFull';
 import CenterFocusStrongIcon from '@mui/icons-material/CenterFocusStrong';
 import RecordVoiceOverIcon from '@mui/icons-material/RecordVoiceOver';
@@ -21,7 +21,7 @@ function App() {
 
   const [isActive, setIsActive] = useState(false);
 
-  function toggleAtive() {
+  function toggleActive() {
     setIsActive(!isActive);
   }
 
