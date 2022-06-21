@@ -2,18 +2,7 @@ import React from 'react';
 
 function Inmersion() {
   return (
-    <div
-      style={{
-        width: '280px',
-        height: '400px',
-        border: '1px solid black',
-        borderRadius: '12.5px',
-        position: 'fixed',
-        bottom: '70px',
-        left: '70px',
-        backgroundColor: '#ffffff',
-      }}
-    >
+    <div style={{}}>
       <div
         style={{
           width: '95%',
