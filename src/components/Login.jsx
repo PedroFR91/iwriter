@@ -1,6 +1,18 @@
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { auth } from '../firebase';
+import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 function Login() {
+  const login = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithPopup(auth, provider)
+      .then((re) => {
+        console.log(re);
+      })
+      .cacth((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div
       style={{
@@ -11,7 +23,8 @@ function Login() {
         color: 'black',
       }}
     >
-      <AccountCircleIcon />
+      <AccountCircleIcon onClick={login} />
+      {}
     </div>
   );
 }
