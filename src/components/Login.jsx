@@ -9,7 +9,7 @@ function Login() {
       .then((re) => {
         console.log(re);
       })
-      .cacth((err) => {
+      .catch((err) => {
         console.log(err);
       });
   };
