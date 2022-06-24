@@ -10,6 +10,7 @@ function Export() {
         display: 'flex',
         cursor: 'pointer',
         color: 'black',
+        zIndex: 10,
       }}
     >
       <div style={{ marginRight: '15px' }}>Export</div>

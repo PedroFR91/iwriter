@@ -21,6 +21,7 @@ function Login() {
         right: '3%',
         cursor: 'pointer',
         color: 'black',
+        zIndex: 10,
       }}
     >
       <AccountCircleIcon onClick={login} />
