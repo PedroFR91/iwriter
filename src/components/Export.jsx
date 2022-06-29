@@ -1,6 +1,6 @@
 import React from 'react';
 import SystemUpdateAltIcon from '@mui/icons-material/SystemUpdateAlt';
-function Export() {
+function Export(props) {
   return (
     <div
       style={{
@@ -9,7 +9,7 @@ function Export() {
         right: '3%',
         display: 'flex',
         cursor: 'pointer',
-        color: 'black',
+        color: props.color,
         zIndex: 10,
       }}
     >

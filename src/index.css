@@ -109,6 +109,9 @@ ul {
 .dark {
   color: #5b5c65;
 }
+.darklight {
+  color: #5b5c6580;
+}
 .primary {
   color: #f6ac8f;
 }
@@ -184,7 +187,7 @@ ul {
   position: fixed;
   bottom: 70px;
   left: 70px;
-  background-color: #ffffff;
+  background-color: #e1dcdc;
   z-index: 10;
 }
 .font-container {
@@ -196,13 +199,21 @@ ul {
   height: 16%;
   border-bottom: 1px solid black;
 }
-.red {
-  color: red;
-}
 /*FULLSCREEN*/
 .fullscreen {
   display: flex;
   width: 150px;
   cursor: pointer;
   margin-top: 20px;
+}
+/*EDITORJS*/
+.ce-block--focused {
+  color: #571118;
+}
+/*TITLE*/
+.title {
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  z-index: 10;
 }

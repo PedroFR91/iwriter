@@ -1,16 +1,8 @@
 import React from 'react';
 
-function Title() {
+function Title(props) {
   return (
-    <div
-      style={{
-        position: 'fixed',
-        top: '5%',
-        left: '3%',
-        color: 'black',
-        zIndex: 10,
-      }}
-    >
+    <div className='title' style={{ color: props.color }}>
       i-Writer
     </div>
   );
